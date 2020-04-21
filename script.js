@@ -22,3 +22,16 @@ function createMyObject() {
     obj.bang = 'bang';
     return obj;
   }
+
+  //self-reference
+
+  function personMaker() {
+    var person = {
+      firstName: 'Paul',
+      lastName: 'Jones',
+      // replace `null` with a function that uses self reference to return
+      // full name
+      fullName: null,
+    };
+    return person;
+  }
